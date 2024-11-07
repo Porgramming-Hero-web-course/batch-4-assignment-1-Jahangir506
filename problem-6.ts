@@ -7,9 +7,7 @@
     email: string;
   }
 
-  const updateProfile  = (obj1: Profile, obj2: )=> {
-
-  }
+  const updateProfile = () => {};
 
   //
 }
