@@ -1,6 +1,7 @@
 {
   //problem-3
 
+  // count function
   const countWordOccurrences = (sentence: string, word: string) => {
     const arrWord: string[] = sentence.split(" ");
     const wordAppearsCount = arrWord.filter((arr) => arr.includes(word)).length;
