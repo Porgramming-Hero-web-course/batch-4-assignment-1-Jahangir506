@@ -10,7 +10,9 @@
     return sum;
   }
 
-  const result = sumArray([1, 2, 3, 4, 5]);
+  const arrOfNumber: number[] = [1, 2, 3, 4, 5];
+
+  const result = sumArray(arrOfNumber);
   console.log(result);
 
   //
