@@ -3,8 +3,8 @@
 
   // count function
   const countWordOccurrences = (sentence: string, word: string): number => {
-    const SentenceToWordArray: string[] = sentence.split(" ");
-    const wordAppearsCount = SentenceToWordArray.filter((arr) =>
+    const arraySentenceToWord: string[] = sentence.split(" ");
+    const wordAppearsCount = arraySentenceToWord.filter((arr) =>
       arr.includes(word)
     ).length;
     return wordAppearsCount;
