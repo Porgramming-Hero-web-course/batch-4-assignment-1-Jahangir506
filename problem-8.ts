@@ -10,7 +10,14 @@
 
   // type rsult = keys extends keyof obj ? true : false;
 
-  const validateKeys = <T>(obj: T, keys: (keyof T)[]) => {};
+  const validateKeys = <T>(obj: T, keys: (keyof T)[]): boolean => {
+    for (let key of keys) {
+      if (obj[key as keyof T] === undefined) {
+        return false;
+      }
+    }
+    return true;
+  };
 
   const person: Person = {
     name: "Alice",
