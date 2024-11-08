@@ -18,5 +18,8 @@ For example: `(Animal instanceof Dog)`
 **custom type guard** - by creating a custom function, `is` used as a type guard.
 For example: `function (shape: Shape) : shape is Circle {}`
 
-in - It usually checks the Object property.
+**in** - It usually checks the Object property.
 For example: `("drive" in vehicle)`
+
+**keyof** - It usually generics and checks the Object property.
+For example: `(T extends keyof K)`
